@@ -1,0 +1,28 @@
+<div class="Watchlist">
+    Watchlist <br/>
+    {{watchlistCount}}
+
+</div>
+
+
+<hr/>
+<div *ngFor="let p of allPlanters">
+<table>
+    <tr>
+        <td> <img src="/assets/images/{{p.imageName}}" alt="Planters image" width="120px" height="150px"> </td>
+        <td> 
+            <h2>{{p.planterName}} </h2>
+            <p> {{p.about}} </p>
+            <hr/>
+            Planters Price {{p.price}} <br/>
+            Planters Height {{p.height}} cm 
+            <hr/>
+            <button value="{{p.planterId}}" (click)="goForBuy(planters.value)" #planters> Buy Planter </button>
+            <button value="{{p.planterId}}" (click)="addWatchlist(planters.value)" #planters> Add to Watchlist </button>
+                
+            
+        </td>
+        
+    </tr>
+</table>
+</div>

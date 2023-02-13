@@ -1,0 +1,26 @@
+<p>admin works!</p>
+<hr/>
+
+<br/>
+
+
+    <table style="width: 100%;" *ngFor="let p of allPlanters">
+        <caption> <p class="ribbon"> {{p.planterName}}</p> </caption>
+        <tr style="width: 100%;">
+            <td class="mycell"> Planter Id </td>
+            <td class="mycell2"> {{p.planterId}} </td>
+        </tr>
+        <tr style="width: 100%;">
+            <td class="mycell"> Planter Height </td>
+            <td class="mycell2"> {{p.height}} </td>
+        </tr>
+        <tr style="width: 100%;">
+            <td class="mycell"> Planter Category </td>
+            <td class="mycell2"> {{p.category}} </td>
+        </tr>
+        <tr style="width: 100%;">
+            <td class="mycell"> Price </td>
+            <td class="mycell2"> {{p.price}} </td>
+        </tr>
+
+    </table>
